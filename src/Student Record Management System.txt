@@ -1,0 +1,52 @@
+Title: Student Record Management System
+
+Objective:
+Create a simple command-line program that allows users to manage student records
+using object-oriented principles, control structures, and input/output handling in Java.
+
+
+Requirements:
+
+Create a Student class to represent student information with the following attributes:
+
+Student ID (integer)
+First Name (String)
+Last Name (String)
+Exam Score (double)
+
+
+Lastname is quaranteed to be unique!
+
+Implement a StudentRecordManager class that contains ArrayList of Student objects.
+This class should provide the following functionalities:
+
+Add a new student record. DONE
+Display all student records. DONE
+Search for a student by ID and display their information. DONE
+
+Use the Scanner class to take user input for various operations. DONE
+
+Bonus: Update a student's information (last name or Exam Score) by their ID. Done
+Bonus: Delete a student record by ID. Done
+
+Implement proper input validation to ensure that user inputs are within reasonable bounds
+(e.g., Exam Score should be between 0.0 and 100.0). DONE
+
+Use control structures like loops (e.g., for displaying all records)
+and conditionals (e.g., for error handling and menu choices). DONE
+
+Ensure data encapsulation by using private instance variables and appropriate getter and setter
+methods in the Student class. DONE
+
+Also, a class -- StudentFileHandler -- which should read the values from a given file in src/main/resources. Skip invalid score values. 
+
+It also should write a file per exam score grade for a given list of students:
+
+  Upper		 Lower	Grade
+100,00 %	 87,50 %	1
+ 87,49 %	 75,00 %	2
+ 74,99 %	 62,50 %	3
+ 62,49 %	 50,00 %	4
+ 49,99 %	  0,00 %	5
+ 
+ Use an appropriate looping mechanism to generate the files.
